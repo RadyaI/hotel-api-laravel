@@ -151,6 +151,7 @@ class TransaksiController extends Controller
             'status_kamar' => 'dipesan',
             'total_pesan' => $itung
         ]);
+        // 2023-07-22
 
         if (!$updatestatuskamar) {
             return response()->json(['message' => 'Failed update kamars', 'reason' => 'kamar'], 500);
@@ -182,7 +183,6 @@ class TransaksiController extends Controller
     {
         $update = transaksi::where('id_transaksi', $id)->update([
             'nama_tamu' => $r->input('nama_tamu'),
-
             'email' => $r->input('email'),
             'tgl_pesan' => $r->input('tgl_pesan'),
             'check_in' => $r->input('check_in'),

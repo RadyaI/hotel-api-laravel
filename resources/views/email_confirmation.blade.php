@@ -45,7 +45,7 @@
 </head>
 
 <body>
-    <h1>Wikusama Hotel</h1>
+    <h1>Royal Hotel</h1>
     <h3>Halo {{ $nama_tamu }}, </h3>
     <h1 align="center">Pesanan kamu sudah di konfirmasi yaa</h1>
     <h4 align="center">untuk mengecek kamu bisa pergi ke halaman CHECK BOOKING dan masukkan id kamu yaitu {{ $id_transaksi }}</h4>

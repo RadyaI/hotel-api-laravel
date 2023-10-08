@@ -7,6 +7,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\KamarController;
 use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\noKamarController;
+use App\Http\Controllers\tesDataController;
 // use App\Http\Controllers\AuthController;
 
 /*
@@ -67,7 +68,7 @@ Route::group(['middleware' => ['jwt.verify']], function () {
 Route::post('/feedback', [TransaksiController::class, 'feedback']);
 Route::get('/user/history/{id}',[UserController::class, 'userHistory']);
 
-//KAMAR
+//KAMAR  
 Route::get('/getkamar', [KamarController::class, 'getkamar']);
 Route::get('/filterKamar/{person}', [KamarController::class, 'filterKamar']);
 Route::get('/getkamar/{id}', [KamarController::class, 'kamarbyid']);
@@ -102,3 +103,8 @@ Route::put('/checkin/{id}', [TransaksiController::class, 'checkin']);
 Route::put('/checkout/{id}/{id_kamar}', [TransaksiController::class, 'checkout']);
 Route::put('kamar_done/{id}/{id_kamar}', [TransaksiController::class, 'kamardone']);
 // });
+
+// tes
+Route::get('/getTesData',[tesDataController::class,'get']);
+Route::post('/TambahData',[tesDataController::class,'createData']);
+Route::delete('/deleteDataTes/{id}',[tesDataController::class,'deleteData']);

@@ -45,7 +45,7 @@
 </head>
 
 <body>
-    <h1>Wikusama Hotel</h1>
+    <h1>Royal Hotel</h1>
     <h1>Halo {{ $nama_tamu }}</h1>
     <h5>Berikut adalah detail dari pesanan Anda:</h5>
     <p>Kode pesanan Anda: {{ $id_transaksi }}</p>

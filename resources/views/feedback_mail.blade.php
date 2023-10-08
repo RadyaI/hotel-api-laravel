@@ -45,7 +45,7 @@
 </head>
 
 <body>
-    <h1>Wikusama Hotel</h1>
+    <h1>Royal Hotel</h1>
     <h3>Id Transaksi: {{ $id_transaksi }}, </h3>
     <h3>Balasan untuk feedback kamu</h3>
     <h4>{{ $balasan}}</h4>
